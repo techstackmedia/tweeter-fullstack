@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.feed-dashboard {
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  height: 200px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.feed-dashboard ul li {
+  list-style-type: none;
+  color: #828282;
+  font-weight: 600;
+  border-left: 3px solid transparent;
+  padding: 10px;
+  width: 294px;
+}
+
+.feed-dashboard ul li:hover,
+.feed-dashboard .active {
+  color: #2f80ed;
+  cursor: pointer;
+  border-left: 3px solid #2f80ed;
+}
+
+.tweet {
+  background-color: #fff;
+  margin: 35px;
+  width: 745px;
+  border-radius: 8px;
+  font-weight: 500;
+  position: relative;
+  padding: 20px;
+  position: relative;
+}
+
+.person-retweet {
+  position: absolute;
+  top: -30px;
+  color: #828282;
+  font-size: 14px;
+  left: 0;
+}
+
+.tweet img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.post-icon img {
+  width: 16.67px;
+  height: 16.67px;
+  top: 3px;
+  position: relative;
+  padding-right: 5px;
+}
+
+.tweet .date {
+  color: #bdbdbd;
+  font-size: 12px;
+  position: relative;
+  top: -5px;
+}
+
+.person-history {
+  position: absolute;
+  top: 5px;
+  left: 65px;
+  top: 20px;
+}
+
+.message {
+  color: #4f4f4f;
+  padding-block: 10px;
+}
+
+.feed-image-posts {
+  height: 330px;
+  margin-block: 10px;
+}
+
+.feed-image-posts img {
+  width: 100%;
+  height: 328px;
+  border-radius: 8px;
+}
+
+hr {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  height: 1px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.tweet-post-icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-icon {
+  padding: 10px 20px;
+  margin: 2px;
+  color: #4f4f4f;
+  font-weight: 14px;
+}
+
+.post-icon:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.tweets-checks {
+  display: flex;
+  justify-content: flex-end;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.comments-count,
+.retweet-counts,
+.saved-count {
+  padding-left: 10px;
+}
+
+.tweets-reply {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input {
+  width: 90%;
+  text-indent: 15px;
+  height: 40px;
+  border: 1px solid #f2f2f2;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+input::placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}

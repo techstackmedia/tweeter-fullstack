@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.info {
+  position: relative;
+}
+
+.header-info::after {
+  position: absolute;
+  content: "Photographer & Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰";
+  bottom: 40px;
+  width: 50%;
+  color: #828282;
+  text-align: start;
+  font-size: 18px;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-around;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  top: -80px;
+  z-index: 45;
+  background-color: #fff;
+  width: 75%;
+  text-align: center;
+  border-radius: 12px;
+  margin: auto;
+  border: 1px solid #fff;
+}
+
+.header-info img {
+  width: 152px;
+  border: 2px solid #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  position: relative;
+  top: -50px;
+}
+
+.header-info-friends ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  left: -65px;
+}
+
+.header-info-friends ul li {
+  list-style-type: none;
+  padding: 5px;
+  font-size: 12px;
+}
+
+.header-info-friends ul li:first-of-type {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+strong {
+  color: #333333;
+  font-weight: 600;
+}
+
+.header-info-friends span {
+  color: #828282;
+}
+
+.header-info-button button {
+  background-color: #2f80ed;
+  color: #fff;
+  border-radius: 4px;
+  width: 101px;
+  height: 32px;
+  border: 1px solid #2f80ed;
+  position: relative;
+  top: 10px;
+  cursor: pointer;
+}
+
+.header-info-button img {
+  width: 14px;
+}
