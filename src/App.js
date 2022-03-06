@@ -1,16 +1,12 @@
-import Header from "./components/Header/Header";
-import Info from "./components/Info/Info";
 import "./App.css";
-import Feed from "./components/Feed/Feed";
+import Profile from "./pages/Profile/Profile";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <Info />
-      <Feed />
-    </div>
+    <>
+      <Profile />
+    </>
   );
-}
+};
 
 export default App;

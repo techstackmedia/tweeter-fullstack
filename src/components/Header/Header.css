@@ -33,7 +33,21 @@ nav {
 .header-navlinks ul li:hover {
   color: #2f80ed;
   cursor: pointer;
+  position: relative;
+  
 }
+
+.header-navlinks li:hover::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 22px);
+  left: 0;
+  right: 0;
+  display: block;
+  border-top: 0.2rem solid #2f80ed;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+} 
 
 .header-profileImg {
   width: 32px;

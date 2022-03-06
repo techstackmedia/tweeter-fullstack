@@ -94,7 +94,23 @@ const Feed = () => {
                 alt="post pic"
               />
             </div>
-            {/* <ImageIcon /> */}
+          </div>
+          <hr />
+          <div className="tweets-reply">
+            <img
+              className="tweets-reply-img"
+              src={belloImg}
+              alt="bello's pic"
+            />
+            <div className="tweets-reply-msg">
+              <div>
+                <span className="tweet-reply-user">Waqar Bloom</span>{" "}
+                <span className="date">24 August at 20:43 </span>
+              </div>
+              I've seen awe-inspiring things that I thought I'd never be able to
+              explain to another person.
+            </div>
+            <div style={{ position: "relative" }}></div>
           </div>
         </div>
       </main>

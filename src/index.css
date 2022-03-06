@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat/Montserrat-Regular.ttf") format("truetype");
+  font-display: swap;
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,4 +19,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  color: #a9a9a9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
