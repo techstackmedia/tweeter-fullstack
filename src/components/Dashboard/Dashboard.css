@@ -24,3 +24,10 @@
   cursor: pointer;
   border-left: 3px solid #2f80ed;
 }
+
+
+@media (max-width: 1057px) {
+  .feed-dashboard {
+    display: none
+  }
+}

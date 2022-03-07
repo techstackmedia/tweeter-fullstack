@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Profile from "./pages/Profile/Profile";
-import RegisterForm from "./components/RegisterForm/RegisterForm";
-import LoginForm from "./components/LoginForm/LoginForm";
+import Login from "./pages/Login/Login";
+import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
 import Bookmarks from "./pages/Bookmarks/Bookmarks";
@@ -14,8 +14,8 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
-          <Route path="/register" element={<RegisterForm />}></Route>
-          <Route path="/login" element={<LoginForm />}></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<Login />}></Route>
           <Route path="/explore" element={<Explore />}></Route>
           <Route path="/bookmarks" element={<Bookmarks />}></Route>
         </Routes>

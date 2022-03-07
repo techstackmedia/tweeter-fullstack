@@ -98,18 +98,6 @@ const RegisterForm = () => {
           Already a member? <a href="/login">Login</a>
         </p>
       </div>
-      <div className="login-footer">
-        <div className="login-absolute">
-          <p>
-            created by <a href="#top">username</a>
-          </p>
-        </div>
-        <div>
-          <p>
-            <a href="#top">devChallenges.io </a>
-          </p>
-        </div>
-      </div>
     </section>
   );
 };

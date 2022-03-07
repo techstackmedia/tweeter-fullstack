@@ -10,4 +10,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   color: #a9a9a9;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 }

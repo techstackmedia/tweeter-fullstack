@@ -1,10 +1,11 @@
 import Navbar from "../../components/Navbar/Navbar";
 import Dashboard from "../../components/ExploreDashboard/ExploreDashboard";
 import Feed from "../../components/Feed/Feed";
+import Footer from "../../components/Footer/Footer";
 
 const Bookmarks = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <div
         style={{
@@ -18,7 +19,9 @@ const Bookmarks = () => {
         </div>
         <Feed />
       </div>
-    </div>
+
+      <Footer />
+    </>
   );
 };
 

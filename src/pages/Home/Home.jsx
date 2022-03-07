@@ -3,6 +3,7 @@ import UserTweet from "../../components/UserTweet/UserTweet";
 import Feed from "../../components/Feed/Feed";
 import Trends from "../../components/Trends/Trends";
 import Follow from "../../components/Follow/Follow";
+import Footer from "../../components/Footer/Footer";
 import "./Home.css";
 
 export const Home = () => {
@@ -21,6 +22,7 @@ export const Home = () => {
           <Follow />
         </div>
       </div>
+      <Footer />
     </>
   );
 };
