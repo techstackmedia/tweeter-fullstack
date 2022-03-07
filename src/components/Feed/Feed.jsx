@@ -6,6 +6,7 @@ import repeat from "../../images/repeat.svg";
 import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
 import bookmark from "../../images/bookmark.svg";
+import usulaImg from "../../images/ursula.jpeg"
 
 import "./Feed.css";
 
@@ -91,7 +92,7 @@ const Feed = () => {
           <div className="tweets-reply">
             <img
               className="tweets-reply-img"
-              src={belloImg}
+              src={usulaImg}
               alt="bello's pic"
             />
             <div className="tweets-reply-msg">

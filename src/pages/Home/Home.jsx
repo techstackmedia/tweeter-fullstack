@@ -10,18 +10,14 @@ export const Home = () => {
     <>
       <Navbar />
       <UserTweet />
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
-        <Feed />
-        <div
-          style={{
-            display: "inline-flex",
-            flexDirection: "column",
-            justifyContent: "flex-start",
-            height: "auto",
-          }}
-        >
+      <div className="Home-Feed">
+        <div>
+          <Feed />
+        </div>
+        <div>
           <Trends />
-          <div style={{ marginTop: "30px" }}></div>
+          <br />
+          <br />
           <Follow />
         </div>
       </div>
