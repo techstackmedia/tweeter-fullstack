@@ -1,0 +1,77 @@
+/* .tweet-users {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  padding: 20px 5px 5px 0;
+}
+
+.reply-others {
+  color: #2f80ed;
+  font-size: 12px;
+} */
+
+.UserTweet,
+.tweet {
+  margin: auto;
+  margin-block: 30px;
+}
+
+.UserTweet-hr {
+  padding-top: 10px;
+}
+
+.UserTweet-img {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.UserTweet-input {
+  border: none;
+  width: 80%;
+  height: 30px;
+}
+
+.UserTweet-input:focus {
+  outline: none;
+}
+
+.UserTweet-position {
+  display: flex;
+  align-items: center;
+}
+
+.UserTweet-reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 5px 5px 0;
+  margin-top: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.UserTweet-reply img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  padding: 0 5px 5px 0;
+  position: relative;
+  top: 9px;
+  fill: #2f80ed;
+
+}
+
+.UserTweet-reply span {
+  color: #2f80ed;
+  font-size: 12px;
+  padding: 0 5px 5px 0;
+}
+
+.UserTweet-reply button {
+  background-color: #2f80ed;
+  color: #fff;
+  border: 1px solid #2f80ed;
+  border-radius: 4px;
+  width: 81px;
+  height: 32px;
+}

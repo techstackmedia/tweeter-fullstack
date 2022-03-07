@@ -1,0 +1,16 @@
+.trends {
+  height: 495.7px;
+  position: relative;
+}
+
+.feed-dashboard ul li.title span {
+  color: #4f4f4f;
+}
+
+.feed-dashboard ul li.title:hover {
+  border-left: 3px solid transparent;
+}
+
+.trend-top {
+  margin-top: 10px;
+}

@@ -13,17 +13,9 @@ const Feed = () => {
   return (
     <>
       <main>
-        <div className="feed-dashboard">
-          <ul>
-            <li className="active">Tweets</li>
-            <li>Tweets &amp; replies</li>
-            <li>Media</li>
-            <li>Likes</li>
-          </ul>
-        </div>
         <div className="tweet">
           <div className="person-retweet">
-            <img
+            <img className="person-retweet-img"
               style={{
                 width: "16px",
                 height: "16px",
@@ -84,11 +76,11 @@ const Feed = () => {
                 style={{
                   position: "absolute",
                   zIndex: 3,
-                  right: "30px",
                   width: "25px",
                   height: "20px",
-                  bottom: "-10px",
                   cursor: "pointer",
+                  bottom: "-2px",
+                  right: "15px",
                 }}
                 src={photo}
                 alt="post pic"
@@ -107,8 +99,8 @@ const Feed = () => {
                 <span className="tweet-reply-user">Waqar Bloom</span>{" "}
                 <span className="date">24 August at 20:43 </span>
               </div>
-              I've seen awe-inspiring things that I thought I'd never be able to
-              explain to another person.
+              <span className="tweet-reply-user-chat">I've seen awe-inspiring things that I thought I'd never be able to
+              explain to another person.</span>
             </div>
             <div style={{ position: "relative" }}></div>
           </div>

@@ -14,21 +14,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   font-family: "Noto Sans", sans-serif;
   background-color: #f0f0f0;
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.footer {
-  position: absolute;
-  bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  font-family: "Montserrat", sans-serif;
-  color: #a9a9a9;
-  width: 100%;
-  display: flex;
-  justify-content: center;
+button {
+  cursor: pointer;
 }
