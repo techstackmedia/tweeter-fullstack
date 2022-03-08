@@ -1,6 +1,7 @@
 .trends {
   height: auto;
   position: relative;
+  margin-bottom: 20px;
 }
 
 .feed-dashboard ul li.title span {

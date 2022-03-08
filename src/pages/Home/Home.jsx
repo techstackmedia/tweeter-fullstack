@@ -4,7 +4,7 @@ import Feed from "../../components/Feed/Feed";
 import Trends from "../../components/Trends/Trends";
 import Follow from "../../components/Follow/Follow";
 import Footer from "../../components/Footer/Footer";
-import NavbarBottom from "../../components/NavbarBottom/NavbarBottom"
+import NavbarBottom from "../../components/NavbarBottom/NavbarBottom";
 import "./Home.css";
 
 export const Home = () => {
@@ -13,13 +13,11 @@ export const Home = () => {
       <Navbar />
       <UserTweet />
       <div className="Home-Feed">
-        <div className="Home-Feed-Down">
+        <div className="Home-Feed-Down" style={{ margin: "20px" }}>
           <Feed />
         </div>
         <div className="trends-follow">
           <Trends />
-          <br />
-          <br />
           <Follow />
         </div>
       </div>
