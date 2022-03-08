@@ -83,6 +83,10 @@ button {
   .trends-follow {
     width: 550px !important;
     display: contents;
+    order: -10 !important;
+  }
+  .Home-Feed-Down {
+    order: 10 !important;
   }
   .title hr,
   .trend-item hr {

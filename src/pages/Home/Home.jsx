@@ -13,7 +13,7 @@ export const Home = () => {
       <Navbar />
       <UserTweet />
       <div className="Home-Feed">
-        <div>
+        <div className="Home-Feed-Down">
           <Feed />
         </div>
         <div className="trends-follow">

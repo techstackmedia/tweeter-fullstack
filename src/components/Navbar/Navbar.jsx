@@ -1,3 +1,5 @@
+import React, { useState } from "react";
+import Dropdown from "../Dropdown/Dropdown";
 import { Outlet, Link } from "react-router-dom";
 import profilePic from "../../images/bello.jpeg";
 import dropdown from "../../images/dropdown.svg";
@@ -5,6 +7,8 @@ import logo from "../../images/logo.svg";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [show, setShow] = useState(true);
+
   return (
     <>
       <header>
@@ -44,18 +48,29 @@ const Navbar = () => {
               </li>
             </ul>
           </div>
-          <div className="header-profile">
+          <div
+            className="header-profile"
+            style={{ position: "relative", cursor: "pointer" }}
+          >
             <img
               className="header-profileImg"
               src={profilePic}
               alt="user's profile pic"
+              onClick={() => setShow((s) => !s)}
             />
             <span>Bello Osagie</span>
             <img
               className="header-navdropdown"
               src={dropdown}
               alt="dropdown icon"
+              onClick={() => setShow((s) => !s)}
             />
+            <div
+              className="dropdown-dropdown"
+              style={{ display: show ? "none" : "block" }}
+            >
+              <Dropdown />
+            </div>
           </div>
         </nav>
         <Outlet />
