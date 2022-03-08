@@ -5,6 +5,8 @@ import Register from "./pages/Register/Register";
 import Home from "./pages/Home/Home";
 import Explore from "./pages/Explore/Explore";
 import Bookmarks from "./pages/Bookmarks/Bookmarks";
+import Setting from "./pages/Setting/Setting";
+
 import "./App.css";
 
 const App = () => {
@@ -18,6 +20,7 @@ const App = () => {
           <Route path="/login" element={<Login />}></Route>
           <Route path="/explore" element={<Explore />}></Route>
           <Route path="/bookmarks" element={<Bookmarks />}></Route>
+          <Route path="/setting" element={<Setting />}></Route>
         </Routes>
       </BrowserRouter>
     </div>

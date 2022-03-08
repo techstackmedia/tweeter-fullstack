@@ -1,0 +1,140 @@
+.personal-navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+.tweeter-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.personal-navbar li {
+  list-style-type: none;
+}
+
+.h2,
+.tweeter-text {
+  font-size: 18px;
+}
+
+.h2 img {
+  width: 31.5px;
+  height: 28.77px;
+}
+
+.person-info-setting {
+  margin: auto;
+  width: 80%;
+}
+
+.setting {
+  margin: auto;
+  width: 60%;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.setting h1 {
+  font-size: 24px;
+  font-weight: 400;
+}
+.setting-info,
+.setting-text,
+.profile-changeImg,
+.setting-change-photo {
+  margin: 10px 0;
+}
+
+.setting-photo {
+  margin-right: 10px;
+  margin-block: 10px;
+  position: relative;
+}
+
+.capture-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 20px;
+}
+
+.capture-image {
+  width: 20px !important;
+  height: 18px !important;
+}
+
+.setting-text {
+  font-size: 13px;
+  color: #828282;
+}
+
+.form .label {
+  margin-top: 10px;
+  font-size: 13px;
+  color: #4f4f4f;
+}
+
+.label input,
+.label textarea {
+  width: 60%;
+  border: 1px solid #828282;
+  border-radius: 12px;
+  height: 52px;
+  text-indent: 15px;
+  background-color: #f0f0f0;
+  position: relative;
+  top: -8px;
+}
+
+.label input::placeholder,
+.label textarea::placeholder {
+  font-size: 13px;
+  color: #bdbdbd;
+}
+
+.label textarea {
+  padding-top: 10px;
+  padding-left: 10px;
+  text-indent: 0;
+}
+
+.label textarea {
+  resize: none;
+  height: 91.58px;
+}
+
+.profile-changeImg {
+  display: flex;
+  align-items: center;
+}
+
+.profile-changeImg p {
+  font-size: 12px;
+}
+
+.profile-changeImg img {
+  width: 72px;
+  height: 72px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.setting-button {
+  background: #2f80ed !important;
+  color: #fff;
+  border: 1px solid #2f80ed !important;
+}
+
+input[value="Save"] {
+  text-align: center;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+}

@@ -17,12 +17,12 @@ const Dropdown = () => {
             </Link>
           </li>
           <li>
-            <Link to="/home">
+            <Link to="/#">
               <img src={group} alt="group icon" /> <span>Group Chat</span>
             </Link>
           </li>
           <li>
-            <Link to="/explore">
+            <Link to="/setting">
               <img src={setting} alt="setting icon" />
               <span>Settings</span>
             </Link>
