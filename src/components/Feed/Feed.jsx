@@ -6,7 +6,7 @@ import repeat from "../../images/repeat.svg";
 import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
 import bookmark from "../../images/bookmark.svg";
-import usulaImg from "../../images/ursula.jpeg"
+import usulaImg from "../../images/ursula.jpeg";
 
 import "./Feed.css";
 
@@ -16,7 +16,8 @@ const Feed = () => {
       <main>
         <div className="tweet">
           <div className="person-retweet">
-            <img className="person-retweet-img"
+            <img
+              className="person-retweet-img"
               style={{
                 width: "16px",
                 height: "16px",
@@ -49,19 +50,19 @@ const Feed = () => {
           <hr />
           <div className="tweet-post-icons">
             <div className="post-icon">
-              <img src={comment} alt="comment" /> Comments
+              <img src={comment} alt="comment" /> <span>Comments</span>
             </div>
             <div className="post-icon">
               <img src={repeat} alt="repeat" />
-              Retweets
+              <span>Retweets</span>
             </div>
             <div className="post-icon">
               <img src={love} alt="love" />
-              Likes
+              <span>Likes</span>
             </div>
             <div className="post-icon">
               <img src={bookmark} alt="love" />
-              Saved
+              <span>Saved</span>
             </div>
           </div>
           <hr />
@@ -100,8 +101,10 @@ const Feed = () => {
                 <span className="tweet-reply-user">Waqar Bloom</span>{" "}
                 <span className="date">24 August at 20:43 </span>
               </div>
-              <span className="tweet-reply-user-chat">I've seen awe-inspiring things that I thought I'd never be able to
-              explain to another person.</span>
+              <span className="tweet-reply-user-chat">
+                I've seen awe-inspiring things that I thought I'd never be able
+                to explain to another person.
+              </span>
             </div>
             <div style={{ position: "relative" }}></div>
           </div>

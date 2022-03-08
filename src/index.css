@@ -20,3 +20,113 @@ body {
 button {
   cursor: pointer;
 }
+
+@media (max-width: 1104px) {
+  .UserTweet,
+  .tweet {
+    width: 650px !important;
+  }
+  .message {
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1057px) {
+  .UserTweet,
+  .tweet {
+    width: 600px !important;
+  }
+  .Home-Feed {
+    justify-content: space-around !important;
+  }
+}
+
+@media (max-width: 971px) {
+  .UserTweet,
+  .tweet {
+    width: 550px !important;
+  }
+}
+
+@media (max-width: 870px) {
+  .Home-Feed {
+    display: grid !important;
+    justify-content: center !important;
+    margin: auto !important;
+  }
+  .trends-follow {
+    width: 550px !important;
+    display: contents;
+  }
+  .title hr,
+  .trend-item hr {
+    width: 500px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+}
+
+@media (max-width: 577px) {
+  .Home-Feed {
+    width: 500px !important;
+  }
+  .trends-follow {
+    width: 500px !important;
+  }
+  .UserTweet,
+  .tweet {
+    width: 500px !important;
+  }
+}
+
+@media (max-width: 710px) {
+  h2 a {
+    display: none;
+  }
+}
+
+@media (max-width: 636px) {
+  .header-profile span {
+    display: none;
+  }
+}
+
+@media (max-width: 556px) {
+  .header-navdropdown {
+    display: none;
+  }
+}
+
+@media (max-width: 530px) {
+  .Home-Feed {
+    width: 480px !important;
+  }
+  .trends-follow {
+    width: 580px !important;
+  }
+  .UserTweet,
+  .tweet {
+    width: 480px !important;
+  }
+}
+
+@media (max-width: 530px) {
+  .header-navlinks ul {
+    display: none !important;
+  }
+  footer {
+    display: none !important;
+  }
+}
+
+@media (min-width: 530px) {
+  .footer-bottom {
+    display: none;
+  }
+}
+
+@media (max-width: 577px) {
+  .post-icon span {
+    display: none;
+  }
+}

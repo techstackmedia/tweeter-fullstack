@@ -1,0 +1,26 @@
+.footer-bottom {
+  position: fixed !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  background-color: #fff;
+  color: #fff;
+  /* padding: 20px; */
+}
+
+.footer-bottom ul {
+  display: flex !important;
+  justify-content: space-around !important;
+  align-items: center !important;
+}
+
+.footer-bottom li {
+  list-style-type: none !important;
+  padding: 10px 30px;
+  border: 1px solid transparent;
+}
+
+.footer-bottom li:hover {
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  border: 1px solid #f2f2f2;
+}

@@ -4,6 +4,7 @@ import Feed from "../../components/Feed/Feed";
 import Trends from "../../components/Trends/Trends";
 import Follow from "../../components/Follow/Follow";
 import Footer from "../../components/Footer/Footer";
+import NavbarBottom from "../../components/NavbarBottom/NavbarBottom"
 import "./Home.css";
 
 export const Home = () => {
@@ -15,13 +16,14 @@ export const Home = () => {
         <div>
           <Feed />
         </div>
-        <div>
+        <div className="trends-follow">
           <Trends />
           <br />
           <br />
           <Follow />
         </div>
       </div>
+      <NavbarBottom />
       <Footer />
     </>
   );
