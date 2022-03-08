@@ -4,7 +4,9 @@ import Dropdown from "../Dropdown/Dropdown";
 import profilePic from "../../images/bello.jpeg";
 import logo from "../../images/logo.svg";
 import dropdown from "../../images/dropdown.svg";
+import leftIcon from "../../images/left.svg";
 import capture from "../../images/capture.svg";
+
 import "./PersonalInfo.css";
 
 const PersonalInfo = () => {
@@ -55,6 +57,23 @@ const PersonalInfo = () => {
         <Outlet />
       </div>
       <div className="setting">
+        <Link to="/">
+          <div
+            style={{
+              position: "absolute",
+              top: "-30px",
+              left: 0,
+              display: "flex",
+              color: "#2D9CDB",
+            }}
+          >
+            <div>
+              <img src={leftIcon} alt="left icon" />
+            </div>
+            <div>Back</div>
+          </div>
+        </Link>
+
         <h1 className="setting-info">Change Info</h1>
         <p className="setting-text">
           Changes will be reflected to every services

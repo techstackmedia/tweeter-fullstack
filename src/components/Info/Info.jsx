@@ -8,7 +8,19 @@ const Info = () => {
       <div className="info">
         <div className="header-info">
           <div>
-            <img src={UserImg} alt="user's pix" />
+            <div>
+              <img src={UserImg} alt="user's pix" />
+              {/* <p
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  textAlign: "center",
+                }}
+              >
+                Photographer &amp; Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰
+              </p> */}
+            </div>
           </div>
           <div className="header-info-userProfile">Daniel Jensen</div>
           <div>
@@ -21,7 +33,9 @@ const Info = () => {
           </div>
         </div>
         <div className="header-info-button">
-          <button><img src={person} alt="default icon" width="12.83px" /> Follow</button>
+          <button>
+            <img src={person} alt="default icon" width="12.83px" /> Follow
+          </button>
         </div>
       </div>
     </div>
