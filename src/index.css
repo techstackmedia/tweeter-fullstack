@@ -21,6 +21,16 @@ button {
   cursor: pointer;
 }
 
+.dash {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.dash-div {
+  position: relative !important;
+  top: 30px !important;
+}
+
 @media (max-width: 1104px) {
   .UserTweet,
   .tweet {
@@ -39,6 +49,21 @@ button {
   .Home-Feed {
     justify-content: space-around !important;
   }
+  /* .dash {
+    display: grid;
+    justify-content: center;
+  } */
+}
+
+@media (max-width: 871px) {
+  .dash {
+    display: grid;
+    justify-content: center;
+  }
+  .feed-dashboard {
+    margin-bottom: 50px;
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 971px) {
@@ -49,7 +74,8 @@ button {
 }
 
 @media (max-width: 870px) {
-  .Home-Feed {
+  .Home-Feed,
+  .Explore {
     display: grid !important;
     justify-content: center !important;
     margin: auto !important;
@@ -102,11 +128,50 @@ button {
     width: 480px !important;
   }
   .trends-follow {
-    width: 580px !important;
+    width: 480px !important;
   }
   .UserTweet,
   .tweet {
     width: 480px !important;
+  }
+}
+
+@media (max-width: 498px) {
+  .Home-Feed {
+    width: 400px !important;
+  }
+  .trends-follow {
+    width: 400px !important;
+  }
+  .UserTweet,
+  .tweet {
+    width: 400px !important;
+  }
+}
+
+@media (max-width: 419px) {
+  .Home-Feed {
+    width: 350px !important;
+  }
+  .trends-follow {
+    width: 350px !important;
+  }
+  .UserTweet,
+  .tweet {
+    width: 350px !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .Home-Feed {
+    width: 300px !important;
+  }
+  .trends-follow {
+    width: 300px !important;
+  }
+  .UserTweet,
+  .tweet {
+    width: 300px !important;
   }
 }
 
@@ -128,5 +193,25 @@ button {
 @media (max-width: 577px) {
   .post-icon span {
     display: none;
+  }
+}
+
+@media (max-width: 503px) {
+  .input,
+  .tweets-reply-msg {
+    width: 85% !important;
+  }
+}
+
+@media (max-width: 370px) {
+  .input,
+  .tweets-reply-msg {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 419px) {
+  .UserTweet-reply {
+    padding-left: 20px !important;
   }
 }

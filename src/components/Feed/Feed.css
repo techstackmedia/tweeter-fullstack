@@ -135,6 +135,11 @@ hr {
   position: relative;
 }
 
+.tweets-reply {
+  top: -5px;
+  position: relative;
+}
+
 .tweet-reply-user-chat {
   color: #4f4f4f;
 }
@@ -163,4 +168,3 @@ input::placeholder {
   top: -5px;
   padding-right: 5px;
 }
-

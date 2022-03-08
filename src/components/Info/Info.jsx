@@ -1,5 +1,4 @@
 import person from "../../images/person-add.svg";
-// <img src={person} alt="default icon" width="12.83px" />
 import "./Info.css";
 import UserImg from "../../images/emma.jpeg";
 
@@ -25,9 +24,6 @@ const Info = () => {
           <button><img src={person} alt="default icon" width="12.83px" /> Follow</button>
         </div>
       </div>
-      {/* <div className="header-info-bio">
-        Photographer &amp; Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰
-      </div> */}
     </div>
   );
 };

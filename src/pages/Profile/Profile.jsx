@@ -4,6 +4,8 @@ import Info from "../../components/Info/Info";
 import Dashboard from "../../components/Dashboard/Dashboard";
 import Feed from "../../components/Feed/Feed";
 import Footer from "../../components/Footer/Footer";
+import NavbarBottom from "../../components/NavbarBottom/NavbarBottom";
+import "./Profile.css";
 
 function Profile() {
   return (
@@ -11,11 +13,12 @@ function Profile() {
       <Navbar />
       <Header />
       <Info />
-      <div style={{ display: "flex", justifyContent: "space-evenly" }}>
+      <div className="dash">
         <Dashboard />
         <Feed />
       </div>
       <Footer />
+      <NavbarBottom />
     </>
   );
 }
