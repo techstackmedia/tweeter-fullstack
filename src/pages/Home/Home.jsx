@@ -18,6 +18,7 @@ export const Home = () => {
         </div>
         <div className="trends-follow">
           <Trends />
+          <br />
           <Follow />
         </div>
       </div>

@@ -64,6 +64,10 @@ button {
     margin-bottom: 50px;
     width: 100% !important;
   }
+  ,
+  .UserTweet {
+    width: 100% !important;
+  }
 }
 
 @media (max-width: 971px) {
