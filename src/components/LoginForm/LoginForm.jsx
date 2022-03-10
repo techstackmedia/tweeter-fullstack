@@ -8,7 +8,7 @@ const Login = () => {
     <section className="login">
       <div className="section--login">
         <div className="section--brand">
-          <img className="icon" src={logo} alt="logo" /> devChallenges
+          <img className="icon" src={logo} alt="logo" /> Tweeter
         </div>
         <div className="login--main">
           <h3>Join thousands of learners from around the world</h3>

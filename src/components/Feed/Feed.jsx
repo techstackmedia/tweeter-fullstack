@@ -7,6 +7,7 @@ import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
 import bookmark from "../../images/bookmark.svg";
 import usulaImg from "../../images/ursula.jpeg";
+// import axios from "axios"
 
 import "./Feed.css";
 

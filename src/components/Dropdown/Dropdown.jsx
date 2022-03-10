@@ -9,7 +9,7 @@ const Dropdown = () => {
   return (
     <>
       <div className="dropdown-items">
-        <ul>
+        <ul className="ul-dropdown">
           <li>
             <Link to="/profile">
               <img src={person} alt="person icon" />{" "}

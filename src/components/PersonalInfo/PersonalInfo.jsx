@@ -108,8 +108,8 @@ const PersonalInfo = () => {
             <div className="label">
               <textarea
                 placeholder="Enter your bio..."
-                row="5"
-                column="5"
+                rows={5}
+                cols={5}
               ></textarea>
             </div>
 
