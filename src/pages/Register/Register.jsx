@@ -1,10 +1,10 @@
 import RegisterForm from "../../components/RegisterForm/RegisterForm";
-import Footer from "../../components/Footer/Footer";
+// import Footer from "../../components/Footer/Footer";
 const Register = () => {
   return (
     <>
       <RegisterForm />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

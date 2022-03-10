@@ -1,14 +1,13 @@
 import logo from "../../images/logo.svg";
-import email from "../../images/email.svg";
+import emailImg from "../../images/email.svg";
 import lock from "../../images/lock.svg";
-import username from "../../images/username.svg";
 import gender from "../../images/gender.svg";
 import "../LoginForm/LoginForm.css";
 
 const RegisterForm = () => {
   return (
     <section className="login">
-      <div className="section--login">
+      <form className="section--login">
         <div>
           <img className="icon" src={logo} alt="logo" /> devChallenges
         </div>
@@ -25,7 +24,7 @@ const RegisterForm = () => {
           <div className="login--position__email">
             <img
               className="login--position--email__absolute"
-              src={username}
+              src={emailImg}
               alt="username"
             />
           </div>
@@ -33,6 +32,7 @@ const RegisterForm = () => {
             className="login--input__email"
             type="name"
             placeholder="Username"
+            required
           />{" "}
           <br />
           <br />
@@ -53,8 +53,10 @@ const RegisterForm = () => {
           <div className="login--position__email">
             <img
               className="login--position--email__absolute"
-              src={email}
+              src={emailImg}
               alt="email"
+              required
+              type="email"
             />
           </div>
           <input
@@ -74,10 +76,12 @@ const RegisterForm = () => {
             className="login--input__password"
             type="password"
             placeholder="Password"
+            required
+            minLength="6"
           />
         </div>
         <div className="login--button">
-          <button type="button" className="login--button__code">
+          <button type="submit" className="login--button__code">
             Start coding now
           </button>
         </div>
@@ -86,7 +90,7 @@ const RegisterForm = () => {
             or continue with these social profile
           </p>
         </div>
-      </div>
+      </form>
       <div className="members--login">
         <div className="social--media__login">
           <i className="fab fa-google google__login login--icon__icons"></i>

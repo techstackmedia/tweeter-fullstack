@@ -1,12 +1,12 @@
 import logo from "../../images/logo.svg";
-import email from "../../images/email.svg";
+import emailImg from "../../images/email.svg";
 import lock from "../../images/lock.svg";
 import "./LoginForm.css";
 
 const Login = () => {
   return (
     <section className="login">
-      <div className="section--login">
+      <form className="section--login">
         <div className="section--brand">
           <img className="icon" src={logo} alt="logo" /> Tweeter
         </div>
@@ -23,7 +23,7 @@ const Login = () => {
           <div className="login--position__email">
             <img
               className="login--position--email__absolute"
-              src={email}
+              src={emailImg}
               alt="email"
             />
           </div>
@@ -31,6 +31,7 @@ const Login = () => {
             className="login--input__email"
             type="email"
             placeholder="Email"
+            required
           />{" "}
           <br /> <br />
           <div className="login--position__lock">
@@ -44,10 +45,12 @@ const Login = () => {
             className="login--input__password"
             type="password"
             placeholder="Password"
+            required
+            minLength="6"
           />
         </div>
         <div className="login--button">
-          <button type="button" className="login--button__code">
+          <button type="submit" className="login--button__code">
             Start coding now
           </button>
         </div>
@@ -56,7 +59,7 @@ const Login = () => {
             or continue with these social profile
           </p>
         </div>
-      </div>
+      </form>
       <div className="members--login">
         <div className="social--media__login">
           <i className="fab fa-google google__login login--icon__icons"></i>
