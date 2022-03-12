@@ -41,7 +41,7 @@
 .follow-position-between {
   display: flex;
   justify-content: space-between;
-  width: 271px
+  width: 271px;
 }
 
 .follow-user-name {
@@ -51,4 +51,26 @@
 
 .follow-user {
   display: inline-flex;
+}
+
+.follow-position,
+.follow-position-between {
+  width: 100% !important;
+}
+
+.follow-bio p {
+  min-width: 453.594px;
+}
+
+@media (max-width: 529px) {
+  .follow-bio p {
+    min-width: 300.594px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .follow-bio p {
+    min-width: 300.594px;
+  }
 }

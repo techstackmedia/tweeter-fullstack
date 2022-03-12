@@ -118,6 +118,11 @@ hr {
   justify-content: space-between;
 }
 
+.tweets-reply-person img {
+  position: relative;
+  top: -10px;
+}
+
 .input,
 .tweets-reply-msg {
   width: 90%;
@@ -167,4 +172,12 @@ input::placeholder {
   position: relative;
   top: -5px;
   padding-right: 5px;
+}
+
+.person-retweet-img {
+  width: "16px";
+  height: "16px";
+  position: "relative";
+  padding-right: "5px";
+  top: "5px";
 }

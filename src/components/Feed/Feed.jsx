@@ -5,13 +5,30 @@ import photo from "../../images/photo.svg";
 import repeat from "../../images/repeat.svg";
 import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
-import bookmark from "../../images/bookmark.svg";
+import bookmarks from "../../images/bookmarks.svg";
 import usulaImg from "../../images/ursula.jpeg";
 // import axios from "axios"
 
 import "./Feed.css";
 
 const Feed = () => {
+  const uploadImg = {
+    position: "absolute",
+    zIndex: 3,
+    width: "25px",
+    height: "20px",
+    cursor: "pointer",
+    top: "-17px",
+    right: "15px",
+  };
+
+  const retweet = {
+    width: "16px",
+    height: "16px",
+    position: "relative",
+    paddingRight: "5px",
+    top: "5px",
+  };
   return (
     <>
       <main>
@@ -19,13 +36,7 @@ const Feed = () => {
           <div className="person-retweet">
             <img
               className="person-retweet-img"
-              style={{
-                width: "16px",
-                height: "16px",
-                position: "relative",
-                paddingRight: "5px",
-                top: "5px",
-              }}
+              style={retweet}
               src={repeat}
               alt="retweet pic"
             />
@@ -62,29 +73,22 @@ const Feed = () => {
               <span>Likes</span>
             </div>
             <div className="post-icon">
-              <img src={bookmark} alt="love" />
+              <img src={bookmarks} alt="love" />
               <span>Saved</span>
             </div>
           </div>
           <hr />
-          <div className="tweets-reply">
+          <div className="tweets-reply tweets-reply-person">
             <img src={belloImg} alt="bello's pic" />
             <input
               className="input"
               type="text"
               placeholder="Tweet your reply"
             />
-            <div style={{ position: "relative" }}>
+            <div className="relative">
               <img
-                style={{
-                  position: "absolute",
-                  zIndex: 3,
-                  width: "25px",
-                  height: "20px",
-                  cursor: "pointer",
-                  bottom: "-2px",
-                  right: "15px",
-                }}
+                className="upload-img-post"
+                style={uploadImg}
                 src={photo}
                 alt="post pic"
               />
@@ -107,7 +111,7 @@ const Feed = () => {
                 to explain to another person.
               </span>
             </div>
-            <div style={{ position: "relative" }}></div>
+            <div className="relative"></div>
           </div>
         </div>
       </main>

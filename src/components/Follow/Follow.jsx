@@ -47,6 +47,7 @@ const Follow = () => {
               />
             </div>
           </li>
+
           <hr style={{ width: "90%", margin: "auto" }} />
           <li className="trend-item trend-item-position follow-position">
             <div style={{ display: "inlineFlex" }}>
@@ -68,7 +69,10 @@ const Follow = () => {
               </div>
               <div>
                 <span className="follow-bio">
-                  <p>Follow me on IG: @arstyy</p>
+                  <p>
+                    Photographer &amp; Filmmak
+                    🇩🇰
+                  </p>
                 </span>
               </div>
               <img

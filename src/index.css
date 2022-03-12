@@ -31,6 +31,10 @@ button {
   top: 30px !important;
 }
 
+.relative {
+  position: relative;
+}
+
 @media (max-width: 1104px) {
   .UserTweet,
   .tweet {
@@ -120,8 +124,30 @@ button {
 }
 
 @media (max-width: 636px) {
-  .header-profile span {
+  .username-profile {
     display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .dropdown-items ul span {
+    display: none;
+  }
+  .dropdown-items ul {
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .dropdown-items {
+    height: 40px !important;
+  }
+  .dropdown-items ul li:hover {
+    background-color: transparent;
+  }
+  .ul-dropdown img:hover {
+    filter: invert(35%) sepia(87%) saturate(901%) hue-rotate(187deg)
+      brightness(108%) contrast(88%);
   }
 }
 
@@ -221,5 +247,20 @@ button {
 @media (max-width: 419px) {
   .UserTweet-reply {
     padding-left: 20px !important;
+  }
+}
+
+form {
+  padding: 20px;
+}
+
+@media (max-width: 519px) {
+  .feed-dashboard.trends,
+  .follow {
+    width: 92% !important;
+    margin: auto;
+  }
+  body {
+    overflow-x: hidden;
   }
 }

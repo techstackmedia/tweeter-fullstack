@@ -58,7 +58,7 @@ const Navbar = () => {
               alt="user's profile pic"
               onClick={() => setShow((s) => !s)}
             />
-            <span>Bello Osagie</span>
+            <span className="username-profile">Bello Osagie</span>
             <img
               className="header-navdropdown"
               src={dropdown}

@@ -1,13 +1,41 @@
 import logo from "../../images/logo.svg";
+import person from "../../images/username.svg";
 import emailImg from "../../images/email.svg";
 import lock from "../../images/lock.svg";
-import gender from "../../images/gender.svg";
+import genderImg from "../../images/gender.svg";
 import "../LoginForm/LoginForm.css";
+import {useState} from "react";
+import axios from "axios";
 
 const RegisterForm = () => {
+
+  const [userName, setUserName] = useState();
+  const [email, setEmail] = useState();
+  const [gender, setGender] = useState();
+  const [password, setPassword] = useState();
+
+ 
+  let url = "http://localhost:5000/api/auth/register";
+  let registerUser = async (e)=>{
+
+  
+    e.preventDefault()
+
+     const result  = await axios.post(url,{
+      username:userName,
+      email:email,
+      password:password
+    })
+
+    if(result){
+      console.log(result)
+      window.location = "/login"
+    }
+
+  }
   return (
     <section className="login">
-      <form className="section--login">
+      <form className="section--login" onSubmit = {(e)=>registerUser(e)}>
         <div>
           <img className="icon" src={logo} alt="logo" /> devChallenges
         </div>
@@ -24,29 +52,32 @@ const RegisterForm = () => {
           <div className="login--position__email">
             <img
               className="login--position--email__absolute"
-              src={emailImg}
+              src={person}
               alt="username"
             />
           </div>
           <input
             className="login--input__email"
-            type="name"
+            type="text" 
             placeholder="Username"
             required
+            onChange = {(e)=>setUserName(e.target.value)}
           />{" "}
           <br />
           <br />
           <div className="login--position__email">
             <img
               className="login--position--email__absolute"
-              src={gender}
+              src={genderImg}
               alt="gender"
             />
           </div>
           <input
             className="login--input__email"
-            type="name"
+            type="text"
             placeholder="Gender"
+            onChange = {(e)=>setGender(e.target.value)}
+
           />{" "}
           <br />
           <br />
@@ -55,14 +86,16 @@ const RegisterForm = () => {
               className="login--position--email__absolute"
               src={emailImg}
               alt="email"
-              required
-              type="email"
+
             />
           </div>
           <input
             className="login--input__email"
             type="email"
+            required
             placeholder="Email"
+           onChange = {(e)=>setEmail(e.target.value)}
+
           />{" "}
           <br /> <br />
           <div className="login--position__lock">
@@ -78,10 +111,16 @@ const RegisterForm = () => {
             placeholder="Password"
             required
             minLength="6"
+           onChange = {(e)=>setPassword(e.target.value)}
+
           />
         </div>
         <div className="login--button">
-          <button type="submit" className="login--button__code">
+          <button
+            type="submit"
+            className="login--button__code"
+            onSubmit="/login"
+          >
             Start coding now
           </button>
         </div>

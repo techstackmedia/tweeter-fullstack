@@ -21,7 +21,9 @@ const NavbarBottom = () => {
           </li>
           <li>
             <Link to="/bookmarks">
-              <img src={bookmark} alt="bookmark icon" />
+              <span>
+                <img src={bookmark} alt="bookmark icon" />
+              </span>
             </Link>
           </li>
         </ul>
