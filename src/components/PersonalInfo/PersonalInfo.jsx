@@ -99,7 +99,7 @@ const PersonalInfo = () => {
               <label>Name</label>
             </div>
             <div className="label">
-              <input placeholder="Enter your name..." />
+              <input className="bio-input" placeholder="Enter your name..." />
             </div>
             <div className="label">
               <label>Bio</label>
@@ -107,6 +107,7 @@ const PersonalInfo = () => {
 
             <div className="label">
               <textarea
+                className="bio-input"
                 placeholder="Enter your bio..."
                 rows={5}
                 cols={5}
@@ -118,7 +119,11 @@ const PersonalInfo = () => {
             </div>
 
             <div className="label">
-              <input type="phone" placeholder="Enter your phone..." />
+              <input
+                className="bio-input"
+                type="phone"
+                placeholder="Enter your phone..."
+              />
             </div>
 
             <div className="label">
@@ -126,7 +131,11 @@ const PersonalInfo = () => {
             </div>
 
             <div className="label">
-              <input type="email" placeholder="Enter your email..." />
+              <input
+                className="bio-input"
+                type="email"
+                placeholder="Enter your email..."
+              />
             </div>
 
             <div className="label">
@@ -134,11 +143,19 @@ const PersonalInfo = () => {
             </div>
 
             <div className="label">
-              <input type="password" placeholder="Enter your password..." />
+              <input
+                className="bio-input"
+                type="password"
+                placeholder="Enter your password..."
+              />
             </div>
 
             <div className="label">
-              <input className="setting-button" type="submit" value="Save" />
+              <input
+                className="bio-input setting-button"
+                type="submit"
+                value="Save"
+              />
             </div>
           </div>
         </form>

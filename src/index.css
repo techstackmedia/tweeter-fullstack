@@ -264,3 +264,23 @@ form {
     overflow-x: hidden;
   }
 }
+
+@media (max-width: 915px) {
+  .label input,
+  .label textarea {
+    width: 80% !important;
+  }
+  .setting {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .label input,
+  .label textarea {
+    width: 100% !important;
+  }
+  .setting {
+    width: 85% !important;
+  }
+}

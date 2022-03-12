@@ -3,35 +3,29 @@ import emailImg from "../../images/email.svg";
 import lock from "../../images/lock.svg";
 import "./LoginForm.css";
 import { useState } from "react";
-import axios from "axios"
-
+import axios from "axios";
 
 const Login = () => {
-
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
 
-
   let url = "http://localhost:5000/api/auth/login";
 
-  let userLogin = async (e)=>{
+  let userLogin = async (e) => {
+    e.preventDefault();
 
-  
-    e.preventDefault()
+    const result = await axios.post(url, {
+      email: email,
+      password: password,
+    });
 
-     const result  = await axios.post(url,{
-      email:email,
-      password:password
-    })
-
-    if(result){
-      window.location = "/"
+    if (result) {
+      window.location = "/";
     }
-
-  }
+  };
   return (
     <section className="login">
-      <form className="section--login" onSubmit= {(e)=>userLogin(e)}>
+      <form className="section--login" onSubmit={(e) => userLogin(e)}>
         <div className="section--brand">
           <img className="icon" src={logo} alt="logo" /> Tweeter
         </div>
@@ -57,8 +51,7 @@ const Login = () => {
             type="email"
             placeholder="Email"
             required
-            onChange = {(e)=>setEmail(e.target.value)}
-
+            onChange={(e) => setEmail(e.target.value)}
           />{" "}
           <br /> <br />
           <div className="login--position__lock">
@@ -74,8 +67,7 @@ const Login = () => {
             placeholder="Password"
             required
             minLength="6"
-            onChange = {(e)=>setPassword(e.target.value)}
-
+            onChange={(e) => setPassword(e.target.value)}
           />
         </div>
         <div className="login--button">
