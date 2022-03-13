@@ -21,6 +21,7 @@ const RegisterForm = () => {
       username: userName,
       email: email,
       password: password,
+      gender: gender,
     });
 
     if (result) {
