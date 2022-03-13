@@ -10,24 +10,17 @@ const Info = () => {
           <div>
             <div>
               <img src={UserImg} alt="user's pix" />
-              {/* <p
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  textAlign: "center",
-                }}
-              >
+              <p>
                 Photographer &amp; Filmmaker based in Copenhagen, Denmark ✵ 🇩🇰
-              </p> */}
+              </p>
             </div>
           </div>
           <div className="header-info-userProfile">Daniel Jensen</div>
-          <div>
+          <div className="following">
             <strong className="header-info-userCount">2,569</strong>{" "}
             <span className="header-info-userFollow">Following</span>
           </div>
-          <div>
+          <div className="followers">
             <strong className="header-info-userCount">10.8K</strong>{" "}
             <span className="header-info-userFollow">Followers</span>
           </div>
