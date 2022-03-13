@@ -20,7 +20,7 @@ const Login = () => {
     });
 
     if (result) {
-      window.location = "/";
+      window.location.href = "/";
     }
   };
   return (
@@ -66,7 +66,7 @@ const Login = () => {
             type="password"
             placeholder="Password"
             required
-            minLength="6"
+            minLength={6}
             onChange={(e) => setPassword(e.target.value)}
           />
         </div>
