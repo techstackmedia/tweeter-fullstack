@@ -7,12 +7,10 @@ import love from "../../images/love.svg";
 import comment from "../../images/comment.svg";
 import bookmarks from "../../images/bookmarks.svg";
 import usulaImg from "../../images/ursula.jpeg";
-// import axios from "axios"
 
 import "./Feed.css";
 
 const Feed = () => {
-  // const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const uploadImg = {
     position: "absolute",
     zIndex: 3,
@@ -95,24 +93,27 @@ const Feed = () => {
               />
             </div>
           </div>
-          <hr />
-          <div className="tweets-reply">
-            <img
-              className="tweets-reply-img"
-              src={usulaImg}
-              alt="bello's pic"
-            />
-            <div className="tweets-reply-msg">
-              <div>
-                <span className="tweet-reply-user">Waqar Bloom</span>{" "}
-                <span className="date">24 August at 20:43 </span>
+
+          <div className="show-hide-tweet">
+            <hr />
+            <div className="tweets-reply">
+              <img
+                className="tweets-reply-img"
+                src={usulaImg}
+                alt="bello's pic"
+              />
+              <div className="tweets-reply-msg">
+                <div>
+                  <span className="tweet-reply-user">Waqar Bloom</span>{" "}
+                  <span className="date">24 August at 20:43 </span>
+                </div>
+                <span className="tweet-reply-user-chat">
+                  I've seen awe-inspiring things that I thought I'd never be
+                  able to explain to another person.
+                </span>
               </div>
-              <span className="tweet-reply-user-chat">
-                I've seen awe-inspiring things that I thought I'd never be able
-                to explain to another person.
-              </span>
+              <div className="relative"></div>
             </div>
-            <div className="relative"></div>
           </div>
         </div>
       </section>
