@@ -1,8 +1,8 @@
+import { useState } from "react";
 import logo from "../../images/logo.svg";
 import emailImg from "../../images/email.svg";
 import lock from "../../images/lock.svg";
 import "./LoginForm.css";
-import { useState } from "react";
 import axios from "axios";
 
 const Login = () => {

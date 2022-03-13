@@ -5,7 +5,7 @@ import "./UserTweet.css";
 
 const UserTweet = () => {
   return (
-    <div className="tweet UserTweet">
+    <section className="tweet UserTweet">
       <div>Tweet something</div>
       <hr className="UserTweet-hr" />
       <div className="UserTweet-position">
@@ -20,7 +20,7 @@ const UserTweet = () => {
         </div>
         <button>Tweet</button>
       </div>
-    </div>
+    </section>
   );
 };
 export default UserTweet;

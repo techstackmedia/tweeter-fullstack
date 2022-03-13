@@ -12,7 +12,7 @@ import "./PersonalInfo.css";
 const PersonalInfo = () => {
   const [show, setShow] = useState(true);
   return (
-    <>
+    <section>
       <div>
         <ul className="personal-navbar">
           <li>
@@ -160,7 +160,7 @@ const PersonalInfo = () => {
           </div>
         </form>
       </div>
-    </>
+    </section>
   );
 };
 

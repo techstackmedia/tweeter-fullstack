@@ -31,7 +31,7 @@ const Feed = () => {
   };
   return (
     <>
-      <main>
+      <section>
         <div className="tweet">
           <div className="person-retweet">
             <img
@@ -114,7 +114,7 @@ const Feed = () => {
             <div className="relative"></div>
           </div>
         </div>
-      </main>
+      </section>
     </>
   );
 };

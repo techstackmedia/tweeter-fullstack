@@ -7,15 +7,15 @@ import "./Follow.css";
 const Follow = () => {
   return (
     <>
-      <div className="feed-dashboard trends follow">
+      <section className="feed-dashboard trends follow">
         <ul>
           <li className="trend-item title">
             <span>Who to Follow</span> <br />
             <hr />
           </li>
 
-          <li className="trend-item trend-item-position follow-position">
-            <div style={{ display: "inlineFlex" }}>
+          <li className="trend-item trend-item-position follow-position bl">
+            <div>
               <div className="follow-position-between">
                 <div>
                   <img src={image} alt="user pic" />
@@ -49,8 +49,8 @@ const Follow = () => {
           </li>
 
           <hr style={{ width: "90%", margin: "auto" }} />
-          <li className="trend-item trend-item-position follow-position">
-            <div style={{ display: "inlineFlex" }}>
+          <li className="trend-item trend-item-position follow-position bl">
+            <div>
               <div className="follow-position-between">
                 <div>
                   <img src={soares} alt="user pic" />
@@ -69,10 +69,7 @@ const Follow = () => {
               </div>
               <div>
                 <span className="follow-bio">
-                  <p>
-                    Photographer &amp; Filmmak
-                    🇩🇰
-                  </p>
+                  <p>Photographer &amp; Filmmak 🇩🇰</p>
                 </span>
               </div>
               <img
@@ -83,7 +80,7 @@ const Follow = () => {
             </div>
           </li>
         </ul>
-      </div>
+      </section>
     </>
   );
 };

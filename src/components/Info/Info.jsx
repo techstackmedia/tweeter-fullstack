@@ -4,7 +4,7 @@ import UserImg from "../../images/emma.jpeg";
 
 const Info = () => {
   return (
-    <div>
+    <section>
       <div className="info">
         <div className="header-info">
           <div>
@@ -38,7 +38,7 @@ const Info = () => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Info;

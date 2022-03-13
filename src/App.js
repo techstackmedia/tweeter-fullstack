@@ -28,3 +28,9 @@ const App = () => {
 };
 
 export default App;
+/*
+feed-dashboard trends follow ul
+width: 300px
+trend-item trend-item-position follow-position div
+width: 300px
+*/

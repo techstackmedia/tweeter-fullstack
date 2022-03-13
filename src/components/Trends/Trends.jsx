@@ -2,7 +2,7 @@ import "./Trends.css";
 
 const Trends = () => {
   return (
-    <>
+    <section>
       <div className="feed-dashboard trends">
         <ul>
           <li className="trend-item title">
@@ -47,7 +47,7 @@ const Trends = () => {
           </li>
         </ul>
       </div>
-    </>
+    </section>
   );
 };
 

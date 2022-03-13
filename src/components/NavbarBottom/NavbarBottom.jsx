@@ -7,7 +7,7 @@ import "./NavbarBottom.css";
 const NavbarBottom = () => {
   return (
     <>
-      <div className="footer-bottom">
+      <section className="footer-bottom">
         <ul>
           <li>
             <Link to="/profile">
@@ -28,7 +28,7 @@ const NavbarBottom = () => {
           </li>
         </ul>
         <Outlet />
-      </div>
+      </section>
     </>
   );
 };
