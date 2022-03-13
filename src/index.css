@@ -53,10 +53,6 @@ button {
   .Home-Feed {
     justify-content: space-around !important;
   }
-  /* .dash {
-    display: grid;
-    justify-content: center;
-  } */
 }
 
 @media (max-width: 871px) {
