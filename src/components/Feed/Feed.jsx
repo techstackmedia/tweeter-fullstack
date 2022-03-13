@@ -12,6 +12,7 @@ import usulaImg from "../../images/ursula.jpeg";
 import "./Feed.css";
 
 const Feed = () => {
+  // const PF = process.env.REACT_APP_PUBLIC_FOLDER;
   const uploadImg = {
     position: "absolute",
     zIndex: 3,

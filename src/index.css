@@ -261,8 +261,8 @@ form {
   }
   .dash-div,
   .feed-dashboard {
-    display: flex;
-    margin-bottom: 60px;
+    display: flex !important;
+    margin-bottom: 30px !important;
   }
 }
 
