@@ -295,6 +295,7 @@ form {
   .trend-item trend-item-position,
   .follow-position div {
     width: 300px;
+    margin: inherit;
   }
   .follow-user-img {
     width: 90% !important;
@@ -319,4 +320,8 @@ form {
   .feed-dashboard {
     display: block;
   }
+}
+
+.bl {
+  margin-left: 3px !important;
 }
