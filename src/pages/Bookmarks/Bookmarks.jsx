@@ -6,18 +6,6 @@ import Footer from "../../components/Footer/Footer";
 // import axios from "axios";
 
 const Bookmarks = () => {
-  // async function getUser() {
-  //   try {
-  //     const response = await axios.get(
-  //       "http://localhost:5000/api/users/621bf5f424c70962fda999cf"
-  //     );
-  //     console.log(response);
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-  // getUser();
-
   return (
     <>
       <Navbar />

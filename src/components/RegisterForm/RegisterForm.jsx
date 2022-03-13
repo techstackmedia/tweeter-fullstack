@@ -108,11 +108,7 @@ const RegisterForm = () => {
           />
         </div>
         <div className="login--button">
-          <button
-            type="submit"
-            className="login--button__code"
-            onSubmit="/login"
-          >
+          <button type="submit" className="login--button__code">
             Start coding now
           </button>
         </div>

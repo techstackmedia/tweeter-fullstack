@@ -12,7 +12,7 @@ export const Home = () => {
     <>
       <Navbar />
       <UserTweet />
-      <div className="Home-Feed">
+      <section className="Home-Feed">
         <div className="Home-Feed-Down">
           <Feed />
         </div>
@@ -21,7 +21,7 @@ export const Home = () => {
           <br />
           <Follow />
         </div>
-      </div>
+      </section>
       <NavbarBottom />
       <Footer />
     </>
